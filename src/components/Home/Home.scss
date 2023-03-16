@@ -1,0 +1,107 @@
+$bg: rgb(10, 10, 10);
+@font-face {
+  font-family: ArcaneNine;
+  src: url(./ArcaneNine.otf);
+}
+.banner {
+  height: 650px;
+  background-color: $bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 3rem;
+  box-sizing: border-box;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: $bg;
+    opacity: 0.4;
+  }
+  > h1,
+  p {
+    color: rgb(255, 255, 255);
+    z-index: 10;
+    // text-shadow: 0 0 2px black;
+  }
+  > h1 {
+    // font-family: "ArcaneNine", sans-serif;
+    width: 55%;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 100;
+    margin-top: 7rem;
+  }
+  > p {
+    width: 40%;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-weight: 100;
+  }
+  > div {
+    display: flex;
+
+    > button {
+      padding: 1rem;
+      width: 150px;
+      outline: none;
+      border: none;
+      z-index: 10;
+      border-radius: 5px;
+      margin: 0.5rem 1.5rem 0.5rem 0;
+      // margin: 1rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:nth-child(odd) {
+        background-color: white;
+        color: black;
+      }
+      &:nth-child(even) {
+        background-color: rgb(57, 57, 57);
+        color: rgb(255, 255, 255);
+      }
+      svg {
+        font-size: 1.7rem;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.row {
+  background-color: $bg;
+  padding: 1rem;
+  > h2 {
+    font-weight: 400;
+  }
+  > div {
+    display: flex;
+    // justify-content: center;
+    overflow-x: auto;
+  }
+}
+
+.card {
+  width: 200px;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: transform 0.5s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,14 @@
+.main {
+  > .dunno {
+    position: relative;
+    color: white;
+    margin: -70vh 0vh 0vh 50vh;
+    font-size: 3rem;
+  }
+  > .movies {
+    background-image: url("./img.jpg");
+    opacity: 0.3;
+    height: 100vh;
+    background-size: cover;
+  }
+}

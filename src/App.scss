@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+// $bg: rgb(10, 10, 10);
+$bg_trans: rgba(0, 0, 0, 0);
+$bgdark: rgba(30, 30, 30);
+
+// root
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+// All 'anchor' Tag
+h2 {
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+// H E A D E R
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: $bg_trans;
+  // background: none;
+  // position: absolute;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  // opacity: 50%;
+  z-index: 20;
+  transition: all 0.3s;
+  transition-timing-function: ease-in;
+  > .logo {
+    height: 100%;
+
+    > .logoNetflix {
+      height: 100%;
+    }
+  }
+  > div {
+    width: 100%;
+    margin-left: 3vmax;
+    // border: 1px solid red;
+    > a {
+      margin-right: 1vmax;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  > svg {
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    cursor: pointer;
+    &:hover {
+      color: rgb(220, 220, 220);
+    }
+  }
+  > .avatar {
+    height: 100%;
+    border-radius: 4px;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+}
+.headerDark {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  padding: 1.5rem;
+  height: 8%;
+}

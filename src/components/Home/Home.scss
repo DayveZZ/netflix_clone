@@ -1,10 +1,8 @@
 $bg: rgb(10, 10, 10);
-@font-face {
-  font-family: ArcaneNine;
-  src: url(./ArcaneNine.otf);
-}
+
 .banner {
-  height: 650px;
+  height: 100vh;
+  // height: 100%;
   background-color: $bg;
   background-size: cover;
   background-repeat: no-repeat;
@@ -48,6 +46,7 @@ $bg: rgb(10, 10, 10);
   }
   > div {
     display: flex;
+    flex-direction: row;
 
     > button {
       padding: 1rem;
@@ -68,7 +67,7 @@ $bg: rgb(10, 10, 10);
         opacity: 0.6;
       }
       &:nth-child(odd) {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         color: black;
       }
       &:nth-child(even) {
@@ -103,5 +102,102 @@ $bg: rgb(10, 10, 10);
   transition: transform 0.5s;
   &:hover {
     transform: translateY(-10px);
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .banner {
+    height: 100%;
+    > h1 {
+      font-size: 1rem;
+    }
+    > p {
+      font-size: 0.5rem;
+    }
+    > div {
+      // display: flex;
+
+      > button {
+        padding: 0.2rem;
+        width: 75px;
+        height: 40px;
+        font-size: 0.7rem;
+        font-size: 0.6rem;
+        svg {
+          font-size: rem;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .banner {
+    // height: 100%;
+    height: 100vh;
+    > h1 {
+      font-size: 2rem;
+    }
+    > p {
+      font-size: 1rem;
+    }
+    > div {
+      > button {
+        padding: 0.3rem;
+        width: 100px;
+        height: 50px;
+        font-size: 0.9rem;
+        svg {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner {
+    // height: 100%;
+    height: 100vh;
+    > h1 {
+      font-size: 3rem;
+    }
+    > p {
+      font-size: 1rem;
+    }
+    > div {
+      > button {
+        padding: 0.3rem;
+        width: 120px;
+        height: 50px;
+        font-size: 1rem;
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner {
+    // height: 100%;
+    height: 100vh;
+    > h1 {
+      font-size: 3rem;
+    }
+    > p {
+      font-size: 1rem;
+    }
+    > div {
+      > button {
+        padding: 0.3rem;
+        width: 130px;
+        height: 60px;
+        font-size: 1rem;
+        svg {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }

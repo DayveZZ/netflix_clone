@@ -1,12 +1,13 @@
 .main {
   > .dunno {
-    position: relative;
+    position: absolute;
     color: white;
-    margin: -70vh 0vh 0vh 50vh;
-    font-size: 3rem;
+    margin: -60vh 10vh;
+    font-size: 2rem;
   }
   > .movies {
     background-image: url("./img.jpg");
+    position: relative;
     opacity: 0.3;
     height: 100vh;
     background-size: cover;

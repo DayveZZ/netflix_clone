@@ -84,3 +84,45 @@ a {
   padding: 1.5rem;
   height: 8%;
 }
+@media only screen and (max-width: 599px) {
+  .header {
+    padding: 1rem 1rem;
+    height: 9%;
+    > .logo {
+      height: 40%;
+    }
+    > div {
+      > a {
+        font-size: 0.6rem;
+      }
+    }
+    > .avatar {
+      height: 50%;
+    }
+  }
+  .headerDark {
+    padding: 0.4rem 1rem;
+    height: 7%;
+  }
+}
+// @media only screen and (min-width: 600px) and (max-width: 767px) {
+//   .header {
+//     padding: 1rem 1rem;
+//     height: 9%;
+//     > .logo {
+//       height: 40%;
+//     }
+//     > div {
+//       > a {
+//         font-size: 0.6rem;
+//       }
+//     }
+//     > .avatar {
+//       height: 50%;
+//     }
+//   }
+//   .headerDark {
+//     padding: 0.4rem 1rem;
+//     height: 7%;
+//   }
+// }

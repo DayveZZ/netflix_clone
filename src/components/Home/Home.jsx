@@ -6,20 +6,14 @@ import { AiOutlinePlus } from "react-icons/ai";
 
 const apiKey = "240320fbbabaa4e9d5093b26047ebbf1";
 const imgUrl = "https://image.tmdb.org/t/p/original";
-// TV Popular
 const getTvPopular = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`;
-// TV Top Rated
 const getTvTopRated = `https://api.themoviedb.org/3/tv/top_rated?api_key=${apiKey}&language=en-US&page=1`;
-// Movies Popular
 const getMoviesPopular = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
-// Movies Top Rated
 const getMoviesTopRated = `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}&language=en-US&page=1`;
-// Now Playing
 const getNowPlaying = `https://api.themoviedb.org/3/movie/now_playing?api_key=${apiKey}&language=en-US&page=1`;
 
 const v = Math.floor(Math.random() * 19);
-// const v = 11;
-console.log(v);
+// console.log(v);
 
 const wordLimit = (string) => {
   return string.substr(0, 150) + "...";
